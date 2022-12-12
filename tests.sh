@@ -1,3 +1,3 @@
 #!/bin/bash
-cobc -x -o bin/assert-eq-tests assert-eq-tests.cbl assert-eq.cbl
-./bin/assert-eq-tests
+cobc -x -o bin/testfx-eq-tests testfx-eq-tests.cbl testfx-eq.cbl
+./bin/testfx-eq-tests

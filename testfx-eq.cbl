@@ -1,5 +1,5 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. assert-eq.
+       PROGRAM-ID. testfx-eq.
 
        DATA DIVISION.
        LINKAGE SECTION.
@@ -27,4 +27,4 @@
            IF t-stat = 0
               MOVE 1 TO t-stat
            END-IF.
-       END PROGRAM assert-eq.
+       END PROGRAM testfx-eq.
