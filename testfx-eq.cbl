@@ -11,10 +11,10 @@
        01  act                  PIC S9(09).
 
        PROCEDURE DIVISION USING t-res, exp, act.
-           DISPLAY "Checking if " exp " = " act
            IF exp = act
               PERFORM 200-mark-succeeded
            ELSE
+              DISPLAY "Assertion failed: " exp " = " act
               PERFORM 300-mark-failed
            END-IF
            GOBACK.
