@@ -7,9 +7,9 @@
        77  exp                  PIC S9(9).
        77  act                  PIC S9(9).
        01  t-res.
-           05 t-succ            PIC 9(03)   VALUE 0.
-           05 t-fail            PIC 9(03)   VALUE 0.
-           05 t-stat            PIC 9(01)   VALUE 0.
+           05 t-succ            PIC 9(3)    VALUE 0.
+           05 t-fail            PIC 9(3)    VALUE 0.
+           05 t-stat            PIC A       VALUE 'S'.
        77  msg-fail             PIC X(42)
            VALUE "Internal tests on testfx-eq module failed!".
        77  msg-succ             PIC X(45)
@@ -25,7 +25,7 @@
            MOVE -9 TO exp, act
            CALL eq USING t-res, exp, act
 
-           IF t-stat = 1
+           IF t-stat = 'F'
               DISPLAY msg-fail
               STOP RUN
            END-IF
@@ -36,7 +36,7 @@
            MOVE -999999999 TO exp MOVE 999999999 TO act
            CALL eq USING t-res, exp, act
 
-           IF t-stat = 1
+           IF t-stat = 'F'
               AND t-succ = 3
               AND t-fail = 2
               DISPLAY msg-succ

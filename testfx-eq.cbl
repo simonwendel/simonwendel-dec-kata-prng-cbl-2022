@@ -4,11 +4,11 @@
        DATA DIVISION.
        LINKAGE SECTION.
        01  t-res.
-           05 t-succ            PIC 9(03).
-           05 t-fail            PIC 9(03).
-           05 t-stat            PIC 9(01).
-       01  exp                  PIC S9(09).
-       01  act                  PIC S9(09).
+           05 t-succ            PIC 9(3).
+           05 t-fail            PIC 9(3).
+           05 t-stat            PIC A.
+       01  exp                  PIC S9(12).
+       01  act                  PIC S9(12).
 
        PROCEDURE DIVISION USING t-res, exp, act.
            IF exp = act
@@ -24,7 +24,7 @@
 
        300-mark-failed.
            ADD 1 TO t-fail
-           IF t-stat = 0
-              MOVE 1 TO t-stat
+           IF t-stat = 'S'
+              MOVE 'F' TO t-stat
            END-IF.
        END PROGRAM testfx-eq.

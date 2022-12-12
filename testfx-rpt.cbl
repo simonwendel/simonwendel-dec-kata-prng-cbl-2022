@@ -6,9 +6,9 @@
        77  t-total              PIC Z(03).
        LINKAGE SECTION.
        01  t-res.
-           05 t-succ            PIC Z(03).
-           05 t-fail            PIC Z(03).
-           05 t-stat            PIC Z(01).
+           05 t-succ            PIC 9(3).
+           05 t-fail            PIC 9(3).
+           05 t-stat            PIC A.
 
        PROCEDURE DIVISION USING t-res.
            COMPUTE t-total =

@@ -5,9 +5,9 @@
        WORKING-STORAGE SECTION.
        77  rpt                  PIC X(14)   VALUE "testfx-rpt".
        01  t-res.
-           05 t-succ            PIC Z(03)   VALUE 254.
-           05 t-fail            PIC Z(03)   VALUE 30.
-           05 t-stat            PIC Z(01)   VALUE 1.
+           05 t-succ            PIC 9(3)    VALUE 254.
+           05 t-fail            PIC 9(3)    VALUE 30.
+           05 t-stat            PIC A       VALUE 'F'.
 
        PROCEDURE DIVISION.
            DISPLAY
