@@ -10,6 +10,8 @@
            05 t-stat            PIC A       VALUE 'F'.
 
        PROCEDURE DIVISION.
+           DISPLAY "TESTFX-RPT tests"
+
            DISPLAY
               "Next line should output 254 succeeded, "
               "30 failed, out of 284 total."

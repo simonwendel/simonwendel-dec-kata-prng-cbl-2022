@@ -16,6 +16,8 @@
            VALUE "Internal tests on testfx-eq module succeeded.".
 
        PROCEDURE DIVISION.
+           DISPLAY "TESTFX-EQ tests"
+
            MOVE 25 TO exp, act
            CALL eq USING t-res, exp, act
 
@@ -29,6 +31,8 @@
               DISPLAY msg-fail
               STOP RUN
            END-IF
+
+           DISPLAY "Two failing assertions:"
 
            MOVE 0 TO exp MOVE -1 TO act
            CALL eq USING t-res, exp, act
