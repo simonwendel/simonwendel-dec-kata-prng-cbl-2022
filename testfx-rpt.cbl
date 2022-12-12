@@ -15,7 +15,7 @@
 
        PROCEDURE DIVISION USING t-res.
            COMPUTE disp-total =
-              FUNCTION NUMVAL(t-succ) + FUNCTION NUMVAL(t-fail)
+              FUNCTION NUMVAL (t-succ) + FUNCTION NUMVAL (t-fail)
 
            MOVE t-succ TO disp-succ
            MOVE t-fail TO disp-fail

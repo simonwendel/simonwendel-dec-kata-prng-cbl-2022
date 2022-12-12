@@ -19,15 +19,15 @@
            MULTIPLY n BY 2 GIVING 2n
 
            MULTIPLY
-              FUNCTION NUMVAL(num) BY
-              FUNCTION NUMVAL(num) GIVING square
+              FUNCTION NUMVAL (num) BY
+              FUNCTION NUMVAL (num) GIVING square
 
            STRING square DELIMITED BY SPACE INTO str-sq
            END-STRING.
 
            COMPUTE left-index = (24 - 2n + n / 2) + 1
            COMPUTE right-index = left-index + n
-           MOVE str-sq(left-index : right-index ) TO num
+           MOVE str-sq (left-index : right-index ) TO num
 
            GOBACK.
        END PROGRAM prng.
