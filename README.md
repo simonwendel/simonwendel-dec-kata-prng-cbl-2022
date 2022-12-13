@@ -19,7 +19,7 @@ We see clearly that the distribution is not even, it has huge gaps. When examini
 Even for the untrained eye this does not look very random at all. The user can be fooled by increasing the length `n`, but statistically the algorithm is flawed. If you're unlucky you might even get repeating zeroes for ever.
 
 ## Run environment
-* A computer a COBOL compiler
+* A computer with a COBOL compiler
     * If time on a mainframe is hard to come by, a PC with GNUCOBOL works fine
     * Have a look at the devcontainer for Visual Studio Code
 * An operator who wishes to generate a bunch of not-very-random numbers
