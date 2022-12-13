@@ -27,7 +27,7 @@ Even for the untrained eye this does not look very random at all. The user can b
 ## How to use
 1. Compile code and run 
     * Hot tip: Run the accompanying Bash script by `./run.sh <digits>`
-2. Run tests by compiling and executing some COBOL manually, or use the `tests.sh` script
+2. Run tests by compiling and executing some COBOL manually, or use the `test.sh` script
 3. Success!
 
 ## License
