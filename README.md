@@ -10,13 +10,13 @@ This is generally something valuable to consider.
 
 If we let this generator produce `100,000` numbers of `n=3` digits, based on timestamp as the seed, and plot them in a histogram with 49 buckets, we get this fun little chart:
 
-[Distribution of 100,000 numbers of length n=3](img/distribution_n3.png)
+![Distribution of 100,000 numbers of length n=3](img/distribution_n3.png)
 
 We see clearly that the distribution is not even, it has huge gaps. When examining the series, it's trivial to spot that after 16 generations the 17:th generation starts a pattern of 14 repeating numbers:
 
-[Repeating pattern of period 14](img/period_14.png)
+![Repeating pattern of period 14](img/period_14.png)
 
-Even for the untrained eye this does not look very random at all. The user can be fooled by increasing the length `n`, but statistically the algorithm is flawed.
+Even for the untrained eye this does not look very random at all. The user can be fooled by increasing the length `n`, but statistically the algorithm is flawed. If you're unlucky you might even get repeating zeroes for ever.
 
 ## Run environment
 * A computer a COBOL compiler
