@@ -16,11 +16,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-cobc -x -o bin/testfx-eq-tests testfx-eq-tests.cbl testfx-eq.cbl
+cobc -x -o bin/testfx-eq-tests test/testfx-eq-tests.cbl test/testfx-eq.cbl
 ./bin/testfx-eq-tests
 
-cobc -x -o bin/testfx-rpt-tests testfx-rpt-tests.cbl testfx-rpt.cbl
+cobc -x -o bin/testfx-rpt-tests test/testfx-rpt-tests.cbl test/testfx-rpt.cbl
 ./bin/testfx-rpt-tests
 
-cobc -x -o bin/prng-tests prng-tests.cbl prng.cbl testfx-eq.cbl testfx-rpt.cbl
+cobc -x -o bin/prng-tests test/prng-tests.cbl src/prng.cbl test/testfx-eq.cbl test/testfx-rpt.cbl
 ./bin/prng-tests

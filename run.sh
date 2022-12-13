@@ -16,5 +16,5 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-cobc -x -o bin/randomize randomize.cbl prng.cbl prng-seed.cbl
+cobc -x -o bin/randomize src/randomize.cbl src/prng.cbl src/prng-seed.cbl
 ./bin/randomize $1
