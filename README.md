@@ -16,7 +16,7 @@ We see clearly that the distribution is not even, it has huge gaps. When examini
 
 ![Repeating pattern of period 14](img/period_14.png)
 
-Even for the untrained eye this does not look very random at all. The user can be fooled by increasing the length `n`, but statistically the algorithm is flawed. If you're unlucky you might even get repeating zeroes for ever.
+Even for the untrained eye this does not look very random at all. The user can be fooled by increasing the length `n`, but statistically the algorithm is flawed. If you're (un)lucky you might even get repeating zeroes for ever.
 
 ## Run environment
 * A computer with a COBOL compiler
